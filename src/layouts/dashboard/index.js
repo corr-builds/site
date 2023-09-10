@@ -56,7 +56,7 @@ function Dashboard() {
               <BuildByDevelopers />
             </Grid>
             <Grid item xs={12} lg={5}>
-              <WorkWithTheRockets />
+              <BuildByDevelopers />
             </Grid>
           </Grid>
         </SoftBox>
