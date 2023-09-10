@@ -52,7 +52,10 @@ function DashboardLayout({ children }) {
       })}
     >
       {children}
-      <p>hiiii</p>
+      <p>Hi there! My name is Cathleen Corr. I write, create, and work as a software engineer. Here are some free open-source notes on how I organize my life which you might like to take inspiration from.
+      </p>
+      <br />
+      <p>Share your email now if you’d like to get notified when I create new content. </p>
     </SoftBox>
   );
 }
