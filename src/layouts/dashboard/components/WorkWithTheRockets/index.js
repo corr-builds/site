@@ -46,13 +46,13 @@ function WorkWithTheRockets() {
         >
           <SoftBox mb={3} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
-              Work with the rockets
+              Feats
             </SoftTypography>
           </SoftBox>
           <SoftBox mb={2}>
             <SoftTypography variant="body2" color="white">
-              Wealth creation is an evolutionarily recent positive-sum game. It is all about who
-              take the opportunity first.
+              <li>2015 - Published Essay</li>
+              <li>2015 - First Place Essay Contest Winner</li>
             </SoftTypography>
           </SoftBox>
           <SoftTypography
