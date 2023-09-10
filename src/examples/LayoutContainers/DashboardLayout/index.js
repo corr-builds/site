@@ -52,6 +52,7 @@ function DashboardLayout({ children }) {
       })}
     >
       {children}
+      <p>hiiii</p>
     </SoftBox>
   );
 }

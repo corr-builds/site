@@ -131,7 +131,7 @@ export default function App() {
       </Icon>
     </SoftBox>
   );
-
+// todo scs make configsbutton email getter
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={themeRTL}>
