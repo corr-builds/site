@@ -88,20 +88,7 @@ function VRInfo() {
                   </SoftButton>
                 </Tooltip>
               </SoftBox>
-              <SoftBox mb={{ xs: 0, md: 2 }} mr={{ xs: 2, md: 0 }}>
-                <Tooltip title="Search" placement="right">
-                  <SoftButton
-                    size="large"
-                    iconOnly
-                    sx={({ palette: { dark }, borders: { borderRadius } }) => ({
-                      color: dark.main,
-                      borderRadius: borderRadius.lg,
-                    })}
-                  >
-                    <Icon>search</Icon>
-                  </SoftButton>
-                </Tooltip>
-              </SoftBox>
+              
               <Tooltip title="Minimize" placement="right">
                 <SoftButton
                   size="large"
