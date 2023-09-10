@@ -109,6 +109,7 @@ export default function App() {
     });
 
   const configsButton = (
+    
     <SoftBox
       display="flex"
       justifyContent="center"
@@ -126,12 +127,12 @@ export default function App() {
       sx={{ cursor: "pointer" }}
       onClick={handleConfiguratorOpen}
     >
+      <p>TODO COLLECT EMAIL HERE</p>
       <Icon fontSize="default" color="inherit">
         settings
       </Icon>
     </SoftBox>
   );
-// todo scs make configsbutton email getter
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={themeRTL}>
@@ -169,7 +170,7 @@ export default function App() {
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
-          />
+            />
           <Configurator />
           {configsButton}
         </>
