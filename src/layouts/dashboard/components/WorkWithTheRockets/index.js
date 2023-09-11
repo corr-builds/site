@@ -57,7 +57,7 @@ function WorkWithTheRockets() {
           </SoftBox>
           <SoftTypography
             component="a"
-            href="#"
+            href="/about"
             variant="button"
             color="white"
             fontWeight="medium"
@@ -79,7 +79,7 @@ function WorkWithTheRockets() {
               },
             }}
           >
-            Read More
+            Inquire 
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </SoftTypography>
         </SoftBox>

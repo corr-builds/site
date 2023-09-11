@@ -55,6 +55,8 @@ function Dashboard() {
       <br />
       <p>Share your email now if you’d like to get notified when I create new content: </p>
       <p>TODO COLLECT EMAIL HERE</p>
+        <br />
+        <p>Email TODO for business inquiries.</p>
       </SoftBox>
       <Footer />
     </DashboardLayout>
