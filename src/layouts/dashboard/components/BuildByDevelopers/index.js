@@ -75,7 +75,7 @@ If you’ll sink or you’ll stand<br />
 
                 </SoftTypography>
               </SoftBox>
-              <SoftTypography onClick={() => console.log('click')}
+              <SoftTypography onClick={() => newPage(2)}
                 component="a"
                 href="#"
                 variant="button"
