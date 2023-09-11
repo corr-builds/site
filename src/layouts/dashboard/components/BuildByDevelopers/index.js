@@ -43,55 +43,36 @@ function BuildByDevelopers() {
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  Selected Poetry
                   todo put 3 poems here and end with email collection
-                  test 
-                  textTransformtest test 
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
-                  test 
-                  test 
-                  test 
-                  test 
-                  test
+                  <br />
+                  <i>Selected Poetry</i><br />
+                  <br />
+                  <b>Live!</b><br /><br />
+                  You have soles on your feet<br />
+You have feet in your shoes<br />
+You have shoes as can bear you <br />
+To which place you choose<br />
+<br />
+You have orange leaves to crunch<br />
+You have winters to brave<br />
+You have spring bees to feed<br />
+And ripe fruits to crave<br />
+<br />
+You’ll be tempted to blame<br />
+Or succumb to the easy<br />
+(Pathways to greatness<br />
+Were never all breezy)<br />
+<br />
+As dry hillsides swelter<br />
+And swallow you up<br />
+You’ll look at your feet<br />
+And chin right back up<br />
+<br />
+You’ll see a glass pathway<br />
+Burnt into the sand<br />
+And then you must choose<br />
+If you’ll sink or you’ll stand<br />
+
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
