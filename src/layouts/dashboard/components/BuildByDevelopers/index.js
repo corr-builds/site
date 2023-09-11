@@ -12,7 +12,7 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-
+// todo resume by following this https://www.learnbestcoding.com/post/72/call-parent-function-from-child-component-react#google_vignette
 // @mui material components
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
@@ -75,7 +75,7 @@ If you’ll sink or you’ll stand<br />
 
                 </SoftTypography>
               </SoftBox>
-              <SoftTypography onClick={() => newPage(2)}
+              <SoftTypography onClick={() => props.newPage(2)}
                 component="a"
                 href="#"
                 variant="button"
