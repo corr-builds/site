@@ -44,6 +44,7 @@ function BuildByDevelopers() {
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
                   Selected Poetry
+                  todo put 3 poems here and end with email collection
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
