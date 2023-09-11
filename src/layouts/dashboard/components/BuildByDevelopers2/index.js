@@ -24,9 +24,9 @@ import SoftTypography from "components/SoftTypography";
 
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/pen-shadow-spaced.png";
+import rocketWhite from "assets/images/illustrations/rocket-white.png";
 
-function BuildByDevelopers() {
+function BuildByDevelopers2() {
   return (
     <Card>
       <SoftBox p={2}>
@@ -35,47 +35,19 @@ function BuildByDevelopers() {
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Click For Next Poem
+                  Build by developers
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
-                Works
+                Soft UI Dashboard
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  todo put 3 poems here and end with email collection
-                  <br />
-                  <i>Selected Poetry</i><br />
-                  <br />
-                  <b>Live!</b><br /><br />
-                  You have soles on your feet<br />
-You have feet in your shoes<br />
-You have shoes as can bear you <br />
-To which place you choose<br />
-<br />
-You have orange leaves to crunch<br />
-You have winters to brave<br />
-You have spring bees to feed<br />
-And ripe fruits to crave<br />
-<br />
-You’ll be tempted to blame<br />
-Or succumb to the easy<br />
-(Pathways to greatness<br />
-Were never all breezy)<br />
-<br />
-As dry hillsides swelter<br />
-And swallow you up<br />
-You’ll look at your feet<br />
-And chin right back up<br />
-<br />
-You’ll see a glass pathway<br />
-Burnt into the sand<br />
-And then you must choose<br />
-If you’ll sink or you’ll stand<br />
-
+                  From colors, cards, typography to complex elements, you will find the full
+                  documentation.
                 </SoftTypography>
               </SoftBox>
-              <SoftTypography onClick={() => console.log('click')}
+              <SoftTypography
                 component="a"
                 href="#"
                 variant="button"
@@ -99,7 +71,7 @@ If you’ll sink or you’ll stand<br />
                   },
                 }}
               >
-                Next Poem
+                Read More
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
@@ -133,4 +105,4 @@ If you’ll sink or you’ll stand<br />
   );
 }
 
-export default BuildByDevelopers;
+export default BuildByDevelopers2;

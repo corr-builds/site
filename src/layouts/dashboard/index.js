@@ -41,6 +41,7 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 
 function Dashboard() {
   const { size } = typography;
@@ -54,6 +55,7 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               <BuildByDevelopers />
+              <BuildByDevelopers2 />
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
