@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-function BuildByDevelopers({ nextPage }) {
+const BuildByDevelopers = ( nextPage ) => {
   return (
     <Card>
       <SoftBox p={2}>

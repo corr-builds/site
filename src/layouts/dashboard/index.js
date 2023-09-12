@@ -44,9 +44,9 @@ import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData"
 import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 
 
-import React, { useState } from "react";
+import { useState } from "react";
 
-function Dashboard() {
+const Dashboard = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
   const [page, setPage] = useState(1)
