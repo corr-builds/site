@@ -66,7 +66,7 @@ And ripe fruits to crave<br />
               </SoftBox>
               <SoftTypography
                 //onClick={() => console.log('hi')}
-                onClick={() => nextPage()}
+                onClick={nextPage}
                 component="a"
                 href="#"
                 variant="button"

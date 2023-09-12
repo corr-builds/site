@@ -52,7 +52,7 @@ const Dashboard = () => {
   const [page, setPage] = useState(1)
   const nextPage = () => {
     console.log("hi, from Dashboard")
-    useState(page + 1)
+    setPage(page + 1)
     console.log("next page")
     console.log(page)
   }
