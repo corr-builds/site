@@ -43,22 +43,18 @@ import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 
-// const [page, setPage] = useState()
-// setPage(1)
-// const nextPage = () => {
-//   setPage(this.state.page + 1)
-//   console.log("next page")
-// }
 
-let page = 1
+import React, { useState } from "react";
+
 function Dashboard() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
-  const nextPage = (pageNum) => {
+  const [page, setPage] = useState(1)
+  const nextPage = () => {
     console.log("hi, from Dashboard")
-    page += 1
+    useState(this.state.page + 1)
     console.log("next page")
-    console.log(page)
+    console.log(this.state.page)
   }
 
   return (
@@ -68,7 +64,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
+              {this.state.page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
