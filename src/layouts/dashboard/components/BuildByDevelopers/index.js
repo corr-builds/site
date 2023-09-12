@@ -25,6 +25,9 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
 import rocketWhite from "assets/images/illustrations/pen-shadow-spaced.png";
+import { PropaneSharp } from "@mui/icons-material";
+
+import PropTypes from 'prop-types';
 
 function BuildByDevelopers() {
   return (
@@ -75,7 +78,7 @@ If you’ll sink or you’ll stand<br />
 
                 </SoftTypography>
               </SoftBox>
-              <SoftTypography onClick={() => console.log('click')}
+              <SoftTypography onClick={() => props.nextPage()}
                 component="a"
                 href="#"
                 variant="button"
@@ -133,4 +136,9 @@ If you’ll sink or you’ll stand<br />
   );
 }
 
+BuildByDevelopers.propTypes = {
+  children: PropTypes.node.nextPage,
+};
+
 export default BuildByDevelopers;
+
