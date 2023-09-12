@@ -43,6 +43,18 @@ import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 
+// const [page, setPage] = useState()
+// setPage(1)
+// const nextPage = () => {
+//   setPage(this.state.page + 1)
+//   console.log("next page")
+// }
+let page = 1
+const nextPage = (pageNum) => {
+  this.page += 1
+  console.log("next page")
+}
+
 function Dashboard() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
@@ -54,8 +66,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              <BuildByDevelopers />
-              <BuildByDevelopers2 />
+              {page == 1 ? <BuildByDevelopers /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
