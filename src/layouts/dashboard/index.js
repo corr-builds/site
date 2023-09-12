@@ -61,7 +61,7 @@ const Dashboard = () => {
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-        <SoftBox mb={3}>
+        <SoftBox mb={3} style={{height: 400}}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
