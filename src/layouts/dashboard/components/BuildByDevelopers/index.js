@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-function BuildByDevelopers() {
+function BuildByDevelopers({ children }) {
   return (
     <Card>
       <SoftBox p={2}>
@@ -78,7 +78,9 @@ If you’ll sink or you’ll stand<br />
 
                 </SoftTypography>
               </SoftBox>
-              <SoftTypography onClick={() => props.nextPage()}
+              <SoftTypography
+                onClick={() => console.log(children)}
+                // onClick={() => children.nextPage()}
                 component="a"
                 href="#"
                 variant="button"

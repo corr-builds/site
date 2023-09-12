@@ -51,6 +51,7 @@ import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 // }
 let page = 1
 const nextPage = (pageNum) => {
+  console.log("hi, from Dashboard")
   this.page += 1
   console.log("next page")
 }
@@ -66,7 +67,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
+              {page == 1 ? <BuildByDevelopers nextPage={() => console.log('hii')} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
