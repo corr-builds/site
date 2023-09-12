@@ -50,15 +50,16 @@ import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 //   console.log("next page")
 // }
 
+let page = 1
 function Dashboard() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
-  let page = 1
   const nextPage = (pageNum) => {
-  console.log("hi, from Dashboard")
-  //this.page += 1
-  console.log("next page")
-}
+    console.log("hi, from Dashboard")
+    page += 1
+    console.log("next page")
+    console.log(page)
+  }
 
   return (
     <DashboardLayout>
