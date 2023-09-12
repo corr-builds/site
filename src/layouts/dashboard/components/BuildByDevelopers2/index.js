@@ -26,28 +26,44 @@ import SoftTypography from "components/SoftTypography";
 import wavesWhite from "assets/images/shapes/waves-white.svg";
 import rocketWhite from "assets/images/illustrations/rocket-white.png";
 
-function BuildByDevelopers2() {
+const BuildByDevelopers2 = ({nextPage}) => {
   return (
     <Card>
       <SoftBox p={2}>
-        <Grid container spacing={3}>
+      <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Build by developers
+                  Click For Next Poem
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
-                Soft UI Dashboard
+                Works
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  From colors, cards, typography to complex elements, you will find the full
-                  documentation.
+                  todo put 3 poems here and end with email collection
+                  <br />
+                  <i>Selected Poetry</i><br />
+                  <br />
+                  <b>Poem Two!</b><br /><br />
+                  You have soles on your feet<br />
+You have feet in your shoes<br />
+You have shoes as can bear you <br />
+To which place you choose<br />
+<br />
+You have orange leaves to crunch<br />
+You have winters to brave<br />
+You have spring bees to feed<br />
+And ripe fruits to crave<br />
+
+
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
+                //onClick={() => console.log('hi')}
+                onClick={nextPage}
                 component="a"
                 href="#"
                 variant="button"
@@ -71,7 +87,7 @@ function BuildByDevelopers2() {
                   },
                 }}
               >
-                Read More
+                Next Poem
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
