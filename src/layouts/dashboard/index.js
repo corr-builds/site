@@ -49,16 +49,16 @@ import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 //   setPage(this.state.page + 1)
 //   console.log("next page")
 // }
-let page = 1
-const nextPage = (pageNum) => {
-  console.log("hi, from Dashboard")
-  this.page += 1
-  console.log("next page")
-}
 
 function Dashboard() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
+  let page = 1
+  const nextPage = (pageNum) => {
+  console.log("hi, from Dashboard")
+  //this.page += 1
+  console.log("next page")
+}
 
   return (
     <DashboardLayout>
@@ -67,7 +67,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {page == 1 ? <BuildByDevelopers nextPage={() => console.log('hii')} /> : <BuildByDevelopers2 />}
+              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />

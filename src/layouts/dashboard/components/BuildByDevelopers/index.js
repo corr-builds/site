@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-function BuildByDevelopers({ children }) {
+function BuildByDevelopers({ nextPage }) {
   return (
     <Card>
       <SoftBox p={2}>
@@ -60,27 +60,13 @@ You have orange leaves to crunch<br />
 You have winters to brave<br />
 You have spring bees to feed<br />
 And ripe fruits to crave<br />
-<br />
-You’ll be tempted to blame<br />
-Or succumb to the easy<br />
-(Pathways to greatness<br />
-Were never all breezy)<br />
-<br />
-As dry hillsides swelter<br />
-And swallow you up<br />
-You’ll look at your feet<br />
-And chin right back up<br />
-<br />
-You’ll see a glass pathway<br />
-Burnt into the sand<br />
-And then you must choose<br />
-If you’ll sink or you’ll stand<br />
+
 
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
-                onClick={() => console.log(children)}
-                // onClick={() => children.nextPage()}
+                //onClick={() => console.log('hi')}
+                onClick={() => nextPage()}
                 component="a"
                 href="#"
                 variant="button"
@@ -139,7 +125,7 @@ If you’ll sink or you’ll stand<br />
 }
 
 BuildByDevelopers.propTypes = {
-  children: PropTypes.node.nextPage,
+  nextPage: PropTypes.node
 };
 
 export default BuildByDevelopers;
