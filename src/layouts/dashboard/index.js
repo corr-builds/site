@@ -66,7 +66,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {page == 1 ? <BuildByDevelopers /> : <BuildByDevelopers2 />}
+              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
