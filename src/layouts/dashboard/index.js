@@ -60,10 +60,11 @@ const Dashboard = () => {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox py={3}>
-        <SoftBox mb={3} style={{height: 400}}>
-          <Grid container spacing={3}>
+      <SoftBox py={3} >
+        <SoftBox mb={3} >
+          <Grid container spacing={3} >
             <Grid item xs={12} lg={7}>
+              {/* it's hacky, but for now I need to have the same number of lines of text for each of these so the height won't change when clicking to the next "card" */}
               {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
