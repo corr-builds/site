@@ -52,9 +52,9 @@ function Dashboard() {
   const [page, setPage] = useState(1)
   const nextPage = () => {
     console.log("hi, from Dashboard")
-    useState(this.state.page + 1)
+    useState(page + 1)
     console.log("next page")
-    console.log(this.state.page)
+    console.log(page)
   }
 
   return (
@@ -64,7 +64,7 @@ function Dashboard() {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {this.state.page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
+              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
