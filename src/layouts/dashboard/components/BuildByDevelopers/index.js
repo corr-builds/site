@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-const BuildByDevelopers = ({ nextPage, title, text, buttonText } ) => {
+const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) => {
   return (
     <Card>
       <SoftBox p={2}>
@@ -60,7 +60,7 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText } ) => {
                 //onClick={() => console.log('hi')}
                 onClick={nextPage}
                 component="a"
-                href="#"
+                href={buttonHref}
                 variant="button"
                 color="text"
                 fontWeight="medium"
@@ -120,7 +120,8 @@ BuildByDevelopers.propTypes = {
   nextPage: PropTypes.node,
   title: PropTypes.node,
   text: PropTypes.node,
-  buttonText: PropTypes.node
+  buttonText: PropTypes.node,
+  buttonHref: PropTypes.node
 };
 
 export default BuildByDevelopers;

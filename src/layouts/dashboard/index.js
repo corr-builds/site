@@ -51,6 +51,7 @@ const Dashboard = () => {
   const [title, setTitle] = useState("title 1");
   const [text, setText] = useState("text 1");
   const [buttonText, setButtonText] = useState("Next Poem");
+  const [buttonHref, setButtonHref] = useState("#")
   const nextPage = () => {
     console.log("hi, from Dashboard");
     setPage(page + 1);
@@ -71,6 +72,7 @@ const Dashboard = () => {
         setTitle("title 4");
         setText("maybe this is eventually an add for the poetry collection?");
         setButtonText("Subscribe");
+        setButtonHref("/about")
       }
       // todo change button text and link to home
     },
@@ -92,6 +94,7 @@ const Dashboard = () => {
                 title={title}
                 text={text}
                 buttonText={buttonText}
+                buttonHref={buttonHref}
               />
             </Grid>
             <Grid item xs={12} lg={5}>
