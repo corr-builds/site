@@ -43,18 +43,35 @@ import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Dashboard = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
   const [page, setPage] = useState(1)
+  const [title, setTitle] = useState("title 1")
+  const [text, setText] = useState("text 1")
   const nextPage = () => {
     console.log("hi, from Dashboard")
     setPage(page + 1)
     console.log("next page")
     console.log(page)
   }
+  useEffect(
+    function onChange() {
+      console.log('hi')
+      if (page === 2) {
+        setTitle("title 2");
+        setText("text 2")
+      }
+      else if (page === 3) {
+        setTitle("title 3");
+        setText("text 3")
+      }
+      // todo if it's 4, change button text and link to home
+    },
+    [page]
+  )
 
   // todo based on page num, configure different text and title
 
@@ -66,7 +83,7 @@ const Dashboard = () => {
           <Grid container spacing={3} >
             <Grid item xs={12} lg={7}>
               {/* it's hacky, but for now I need to have the same number of lines of text for each of these so the height won't change when clicking to the next "card" */}
-              <BuildByDevelopers nextPage={nextPage} title={page} text={page} />
+              <BuildByDevelopers nextPage={nextPage} title={title} text={text} />
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
