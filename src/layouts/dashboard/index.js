@@ -42,48 +42,57 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 
-
 import { useState, useEffect } from "react";
 
 const Dashboard = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
-  const [page, setPage] = useState(1)
-  const [title, setTitle] = useState("title 1")
-  const [text, setText] = useState("text 1")
+  const [page, setPage] = useState(1);
+  const [title, setTitle] = useState("title 1");
+  const [text, setText] = useState("text 1");
+  const [buttonText, setButtonText] = useState("Next Poem");
   const nextPage = () => {
-    console.log("hi, from Dashboard")
-    setPage(page + 1)
-    console.log("next page")
-    console.log(page)
-  }
+    console.log("hi, from Dashboard");
+    setPage(page + 1);
+    console.log("next page");
+    console.log(page);
+  };
   useEffect(
     function onChange() {
-      console.log('hi')
+      console.log("hi");
+      // make sure all lines are uniform length so card size doesn't change
       if (page === 2) {
         setTitle("title 2");
-        setText("text 2")
-      }
-      else if (page === 3) {
+        setText("text 2");
+      } else if (page === 3) {
         setTitle("title 3");
-        setText("text 3")
+        setText("text 3");
+      } else if (page === 4) {
+        setTitle("title 4");
+        setText("maybe this is eventually an add for the poetry collection?");
+        setButtonText("Subscribe");
       }
-      // todo if it's 4, change button text and link to home
+      // todo change button text and link to home
     },
     [page]
-  )
+  );
 
   // todo based on page num, configure different text and title
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <SoftBox py={3} >
-        <SoftBox mb={3} >
-          <Grid container spacing={3} >
+      <SoftBox py={3}>
+        <SoftBox mb={3}>
+          <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               {/* it's hacky, but for now I need to have the same number of lines of text for each of these so the height won't change when clicking to the next "card" */}
-              <BuildByDevelopers nextPage={nextPage} title={title} text={text} />
+              <BuildByDevelopers
+                nextPage={nextPage}
+                title={title}
+                text={text}
+                buttonText={buttonText}
+              />
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />
@@ -94,6 +103,6 @@ const Dashboard = () => {
       <Footer />
     </DashboardLayout>
   );
-}
+};
 
 export default Dashboard;

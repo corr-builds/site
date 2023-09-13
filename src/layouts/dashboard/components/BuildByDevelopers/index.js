@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-const BuildByDevelopers = ({ nextPage, title, text } ) => {
+const BuildByDevelopers = ({ nextPage, title, text, buttonText } ) => {
   return (
     <Card>
       <SoftBox p={2}>
@@ -82,7 +82,7 @@ const BuildByDevelopers = ({ nextPage, title, text } ) => {
                   },
                 }}
               >
-                Next Poem
+                {buttonText}
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
@@ -119,7 +119,8 @@ const BuildByDevelopers = ({ nextPage, title, text } ) => {
 BuildByDevelopers.propTypes = {
   nextPage: PropTypes.node,
   title: PropTypes.node,
-  text: PropTypes.node
+  text: PropTypes.node,
+  buttonText: PropTypes.node
 };
 
 export default BuildByDevelopers;
