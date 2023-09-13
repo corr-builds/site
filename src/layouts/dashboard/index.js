@@ -41,7 +41,6 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
-import BuildByDevelopers2 from "./components/BuildByDevelopers2";
 
 
 import { useState } from "react";
@@ -57,6 +56,8 @@ const Dashboard = () => {
     console.log(page)
   }
 
+  // todo based on page num, configure different text and title
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -65,7 +66,7 @@ const Dashboard = () => {
           <Grid container spacing={3} >
             <Grid item xs={12} lg={7}>
               {/* it's hacky, but for now I need to have the same number of lines of text for each of these so the height won't change when clicking to the next "card" */}
-              {page == 1 ? <BuildByDevelopers nextPage={nextPage} /> : <BuildByDevelopers2 />}
+              <BuildByDevelopers nextPage={nextPage} title={page} text={page} />
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets />

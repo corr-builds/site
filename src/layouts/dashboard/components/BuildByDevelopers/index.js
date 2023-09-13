@@ -29,7 +29,7 @@ import { PropaneSharp } from "@mui/icons-material";
 
 import PropTypes from 'prop-types';
 
-const BuildByDevelopers = ({ nextPage } ) => {
+const BuildByDevelopers = ({ nextPage, title, text } ) => {
   return (
     <Card>
       <SoftBox p={2}>
@@ -50,16 +50,8 @@ const BuildByDevelopers = ({ nextPage } ) => {
                   <br />
                   <i>Selected Poetry</i><br />
                   <br />
-                  <b>Live!</b><br /><br />
-                  You have soles on your feet<br />
-You have feet in your shoes<br />
-You have shoes as can bear you <br />
-To which place you choose<br />
-<br />
-You have orange leaves to crunch<br />
-You have winters to brave<br />
-You have spring bees to feed<br />
-And ripe fruits to crave<br />
+                  <b>{title}</b><br /><br />
+{text}
 
 
                 </SoftTypography>
@@ -125,7 +117,9 @@ And ripe fruits to crave<br />
 }
 
 BuildByDevelopers.propTypes = {
-  nextPage: PropTypes.node
+  nextPage: PropTypes.node,
+  title: PropTypes.node,
+  text: PropTypes.node
 };
 
 export default BuildByDevelopers;
