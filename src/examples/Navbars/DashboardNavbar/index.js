@@ -146,7 +146,17 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <Breadcrumbs icon="home" title={route[route.length - 1]} route={route} light={light} />
         </SoftBox>
         {isMini ? null : (
-          null
+           <IconButton
+                          size="small"
+                           color="inherit"
+                           sx={navbarMobileMenu}
+                           onClick={handleMiniSidenav}
+                         >
+                           <Icon className={light ? "text-white" : "text-dark"}>
+                             {miniSidenav ? "menu_open" : "menu"}
+                           </Icon>
+                         </IconButton>
+           
         )}
       </Toolbar>
     </AppBar>
