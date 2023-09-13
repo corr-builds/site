@@ -53,15 +53,10 @@ const Dashboard = () => {
   const [buttonText, setButtonText] = useState("Next Poem");
   const [buttonHref, setButtonHref] = useState("#")
   const nextPage = () => {
-    console.log("hi, from Dashboard");
     setPage(page + 1);
-    console.log("next page");
-    console.log(page);
   };
   useEffect(
     function onChange() {
-      console.log("hi");
-      // make sure all lines are uniform length so card size doesn't change
       if (page === 2) {
         setTitle("title 2");
         setText("text 2");
@@ -74,12 +69,9 @@ const Dashboard = () => {
         setButtonText("Subscribe");
         setButtonHref("/about")
       }
-      // todo change button text and link to home
     },
     [page]
   );
-
-  // todo based on page num, configure different text and title
 
   return (
     <DashboardLayout>
@@ -88,7 +80,6 @@ const Dashboard = () => {
         <SoftBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
-              {/* it's hacky, but for now I need to have the same number of lines of text for each of these so the height won't change when clicking to the next "card" */}
               <BuildByDevelopers
                 nextPage={nextPage}
                 title={title}

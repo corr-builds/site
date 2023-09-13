@@ -51,7 +51,10 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
                   <i>Selected Poetry</i><br />
                   <br />
                   <b>{title}</b><br /><br />
-{text}
+
+                  <div style={{ height: "25vh" }}>
+                    {text}
+                    </div>
 
 
                 </SoftTypography>
