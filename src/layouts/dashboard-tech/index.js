@@ -72,7 +72,7 @@ const DashboardTech = () => {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Companies" }}
-                count="2,300"
+                count="2"
                 // percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: "public" }}
               />
@@ -80,7 +80,7 @@ const DashboardTech = () => {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Books & Courses" }}
-                count="+3,462"
+                count="todo"
                 // percentage={{ color: "error", text: "-2%" }}
                 icon={{ color: "info", component: "emoji_events" }}
               />
@@ -88,7 +88,7 @@ const DashboardTech = () => {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Technologies" }}
-                count="$103,430"
+                count="todo"
                 // percentage={{ color: "success", text: "+5%" }}
                 icon={{
                   color: "info",
