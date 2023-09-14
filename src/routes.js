@@ -39,6 +39,7 @@ Coded by www.creative-tim.com
 import Basic from "layouts/basic";
 import Tables from "layouts/tables";
 import Dashboard from "layouts/dashboard";
+import DashboardTech from "layouts/dashboard-tech";
 import Billing from "layouts/billing";
 import VirtualReality from "layouts/virtual-reality";
 import RTL from "layouts/rtl";
@@ -78,10 +79,10 @@ const routes = [
   {
     type: "collapse",
     name: "Software Engineering",
-    key: "tables",
-    route: "/tables",
+    key: "software",
+    route: "/software",
     icon: <Office size="12px" />,
-    component: <Tables />,
+    component: <DashboardTech />,
     noCollapse: true,
   }
 ];
