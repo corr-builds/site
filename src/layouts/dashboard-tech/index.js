@@ -42,9 +42,18 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 
-function DashboardTech() {
+const DashboardTech = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
+  function getYearsWorked() { // birthday is a date
+    let startDate = new Date();
+    startDate.setFullYear(2020);
+    startDate.setMonth(6);
+    var ageDifMs = Date.now() - startDate;
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+
 
   return (
     <DashboardLayout>
@@ -55,7 +64,7 @@ function DashboardTech() {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Years Experience" }}
-                count="$53,000"
+                count={getYearsWorked()}
                 // percentage={{ color: "success", text: "+55%" }}
                 icon={{ color: "info", component: "paid" }}
               />
