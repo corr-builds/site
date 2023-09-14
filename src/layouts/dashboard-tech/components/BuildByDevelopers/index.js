@@ -24,12 +24,9 @@ import SoftTypography from "components/SoftTypography";
 
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/pen-shadow-spaced.png";
-import { PropaneSharp } from "@mui/icons-material";
+import rocketWhite from "assets/images/illustrations/rocket-white.png";
 
-import PropTypes from 'prop-types';
-
-const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) => {
+function BuildByDevelopers() {
   return (
     <Card>
       <SoftBox p={2}>
@@ -38,32 +35,21 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Click For Next Poem
+                  Build by developers
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
-                Works
+                Soft UI Dashboard
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  todo put 3 poems here and end with email collection
-                  <br />
-                  <i>Selected Poetry</i><br />
-                  <br />
-                  <b>{title}</b><br /><br />
-
-                  <div style={{ height: "25vh" }}>
-                    {text}
-                    </div>
-
-
+                  From colors, cards, typography to complex elements, you will find the full
+                  documentation.
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
-                //onClick={() => console.log('hi')}
-                onClick={nextPage}
                 component="a"
-                href={buttonHref}
+                href="#"
                 variant="button"
                 color="text"
                 fontWeight="medium"
@@ -85,7 +71,7 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
                   },
                 }}
               >
-                {buttonText}
+                Read More
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
@@ -119,13 +105,4 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
   );
 }
 
-BuildByDevelopers.propTypes = {
-  nextPage: PropTypes.node,
-  title: PropTypes.node,
-  text: PropTypes.node,
-  buttonText: PropTypes.node,
-  buttonHref: PropTypes.node
-};
-
 export default BuildByDevelopers;
-
