@@ -24,7 +24,7 @@ import SoftTypography from "components/SoftTypography";
 
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/rocket-white.png";
+import rocketWhite from "assets/images/illustrations/git-icon.png";
 
 function BuildByDevelopers() {
   return (
@@ -35,16 +35,26 @@ function BuildByDevelopers() {
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Build by developers
+                  Repos
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
                 Works
               </SoftTypography>
+              <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                How I Created This Website
+              </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  From colors, cards, typography to complex elements, you will find the full
-                  documentation.
+                 You can view the README documenting my process here. todo here should link somewhere
+                </SoftTypography>
+              </SoftBox>
+              <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                Leetcode Solutions
+              </SoftTypography>
+              <SoftBox mb={6}>
+                <SoftTypography variant="body2" color="text">
+                 View solutions of leetcode problems I have solved here(todo make link).
                 </SoftTypography>
               </SoftBox>
               <SoftTypography
