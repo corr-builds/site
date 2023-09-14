@@ -75,15 +75,15 @@ const routes = [
     component: <Dashboard />,
     noCollapse: true,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Software Engineering",
-  //   key: "tables",
-  //   route: "/tables",
-  //   icon: <Office size="12px" />,
-  //   component: <Tables />,
-  //   noCollapse: true,
-  // }
+  {
+    type: "collapse",
+    name: "Software Engineering",
+    key: "tables",
+    route: "/tables",
+    icon: <Office size="12px" />,
+    component: <Tables />,
+    noCollapse: true,
+  }
 ];
 
 export default routes;
