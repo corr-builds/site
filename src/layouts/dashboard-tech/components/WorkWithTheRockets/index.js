@@ -46,15 +46,67 @@ function WorkWithTheRockets() {
         >
           <SoftBox mb={3} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
-              Feats
+              Feats todo make vertically scrollable - or - collapsible? no, that would make the git
+              icon look weired. vertically scrollable 
             </SoftTypography>
           </SoftBox>
+          <div style={{overflowY: "scroll"}}>
           <SoftBox mb={2}>
+          <SoftTypography variant="h6" color="white" fontWeight="bold">
+              Technologies
+            </SoftTypography>
             <SoftTypography variant="body2" color="white">
-              <li>2015 - Published Essay</li>
-              <li>2015 - First Place Essay Contest Winner</li>
+              <li>AWS Lambda</li>
+              <li>AWS API Gateway</li>
+              <li>AWS DynamoDB</li>
+              <li>AWS Cloudwatch</li>
+              <li>AWS Step Functions</li>
+              <li>AWS EKS</li>
+              <li>AWS IAM</li>
+              <li>Terraform</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Hibernate</li>
+              <li>Spring Data JPA</li>
+              <li>REST APIs</li>
+              <li>Postman</li>
+              <li>JWT</li>
+              <li>NodeJS</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git</li>
+              <li>Gitlab CI</li>
+              <li>Jenkins</li>
+              <li>Apache Kafka</li>
+              <li>Drools</li>
+              <li>SQL</li>
+              <li>Oracle</li>
+              <li>Taurus</li>
+              <li>OpenAPI (Swagger)</li>
+              <li>Docker</li>
+              <li>Openshift</li>
+              <li>Log4J</li>
+              <li>Kibana</li>
+              <li>Prometheus</li>
+              <li>Artifactory</li>
+            </SoftTypography>
+            <SoftTypography variant="h6" color="white" fontWeight="bold">
+              Projects
+            </SoftTypography>
+            <SoftTypography variant="body2" color="white">
+              <li>AWS</li>
+            </SoftTypography>
+            <SoftTypography variant="h6" color="white" fontWeight="bold">
+              Books & Courses
+            </SoftTypography>
+            <SoftTypography variant="body2" color="white">
+              <li>AWS</li>
             </SoftTypography>
           </SoftBox>
+          </div>
           <SoftTypography
             component="a"
             href="/about"
