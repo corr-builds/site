@@ -50,7 +50,7 @@ function WorkWithTheRockets() {
               icon look weired. vertically scrollable 
             </SoftTypography>
           </SoftBox>
-          <div style={{ height: "25vh", overflowY: "scroll"}}>
+          <div style={{ height: "25vh", overflowY: "auto"}}>
           <SoftBox mb={2}>
           <SoftTypography variant="h6" color="white" fontWeight="bold">
               Technologies

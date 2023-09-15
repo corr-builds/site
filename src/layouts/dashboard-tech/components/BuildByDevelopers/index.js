@@ -41,6 +41,7 @@ function BuildByDevelopers() {
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
                 Works
               </SoftTypography>
+              <div style={{ height: "38vh" }}>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
                 How I Created This Website
               </SoftTypography>
@@ -51,12 +52,13 @@ function BuildByDevelopers() {
               </SoftBox>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
                 Leetcode Solutions
-              </SoftTypography>
+              </SoftTypography> 
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
                  View solutions of leetcode problems I have solved here(todo make link).
                 </SoftTypography>
-              </SoftBox>
+                </SoftBox>  
+                </div>
               <SoftTypography
                 component="a"
                 href="#"
