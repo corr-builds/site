@@ -25,11 +25,11 @@ import SoftTypography from "components/SoftTypography";
 import ivancik from "assets/images/book-armchair.jpeg";
 
 const WorkWithTheRockets = (
-  // { nextPage, title, text, buttonText, buttonHref }
+  
 ) => {
   return (
     <Card sx={{ height: "100%" }}>
-      <p>{nextPage}{title}{text}{buttonText}{buttonHref}</p>
+      {/* <p>{nextPage}{title}{text}{buttonText}{buttonHref}</p> */}
       <SoftBox position="relative" height="100%" p={2}>
         <SoftBox
           display="flex"
@@ -143,12 +143,12 @@ const WorkWithTheRockets = (
   );
 }
 
-WorkWithTheRockets.propTypes = {
-  nextPage: PropTypes.node,
-  title: PropTypes.node,
-  text: PropTypes.node,
-  buttonText: PropTypes.node,
-  buttonHref: PropTypes.node
-};
+// WorkWithTheRockets.propTypes = {
+//   nextPage: PropTypes.node,
+//   title: PropTypes.node,
+//   text: PropTypes.node,
+//   buttonText: PropTypes.node,
+//   buttonHref: PropTypes.node
+// };
 
 export default WorkWithTheRockets;
