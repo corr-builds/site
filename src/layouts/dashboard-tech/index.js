@@ -41,6 +41,7 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+import { useState, useEffect } from "react";
 
 const DashboardTech = () => {
   const { size } = typography;
@@ -53,6 +54,31 @@ const DashboardTech = () => {
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
+  const [page, setPage] = useState(1);
+  const [title, setTitle] = useState("title 1");
+  const [text, setText] = useState("text 1");
+  const [buttonText, setButtonText] = useState("Next Poem");
+  const [buttonHref, setButtonHref] = useState("#")
+  const nextPage = () => {
+    setPage(page + 1);
+  };
+  useEffect(
+    function onChange() {
+      if (page === 2) {
+        setTitle("title 2");
+        setText("text 2");
+      } else if (page === 3) {
+        setTitle("title 3");
+        setText("text 3");
+      } else if (page === 4) {
+        setTitle("title 4");
+        setText("maybe this is eventually an add for the poetry collection?");
+        setButtonText("Subscribe");
+        setButtonHref("/about")
+      }
+    },
+    [page]
+  );
 
 
   return (
@@ -104,7 +130,13 @@ const DashboardTech = () => {
               <BuildByDevelopers />
             </Grid>
             <Grid item xs={12} lg={5}>
-              <WorkWithTheRockets />
+              <WorkWithTheRockets
+              nextPage={nextPage}
+              title={title}
+              text={text}
+              buttonText={buttonText}
+              buttonHref={buttonHref}
+              />
             </Grid>
           </Grid>
         </SoftBox>
