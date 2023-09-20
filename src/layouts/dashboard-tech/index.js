@@ -131,13 +131,13 @@ const DashboardTech = () => {
               <BuildByDevelopers />
             </Grid>
             <Grid item xs={12} lg={5}>
-              {/* <WorkWithTheRockets
+              <WorkWithTheRockets
                nextPage={nextPage}
                title={title}
                text={text}
                buttonText={buttonText}
                buttonHref={buttonHref}
-              /> */}
+              />
             </Grid>
           </Grid>
         </SoftBox>
