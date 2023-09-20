@@ -24,7 +24,7 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import ivancik from "assets/images/book-armchair.jpeg";
 
-function WorkWithTheRockets() {
+function WorkWithTheRockets({ nextPage, title, text, buttonText, buttonHref }) {
   return (
     <Card sx={{ height: "100%" }}>
       <SoftBox position="relative" height="100%" p={2}>
@@ -139,5 +139,13 @@ function WorkWithTheRockets() {
     </Card>
   );
 }
+
+WorkWithTheRockets.propTypes = {
+  nextPage: PropTypes.node,
+  title: PropTypes.node,
+  text: PropTypes.node,
+  buttonText: PropTypes.node,
+  buttonHref: PropTypes.node
+};
 
 export default WorkWithTheRockets;
