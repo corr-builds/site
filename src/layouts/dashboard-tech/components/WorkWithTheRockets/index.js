@@ -143,12 +143,12 @@ function WorkWithTheRockets
   );
 }
 
-// WorkWithTheRockets.propTypes = {
-//   nextPage: PropTypes.node,
-//   title: PropTypes.node,
-//   text: PropTypes.node,
-//   buttonText: PropTypes.node,
-//   buttonHref: PropTypes.node
-// };
+WorkWithTheRockets.propTypes = {
+  nextPage: PropTypes.node,
+  title: PropTypes.node,
+  text: PropTypes.node,
+  buttonText: PropTypes.node,
+  buttonHref: PropTypes.node
+};
 
 export default WorkWithTheRockets;
