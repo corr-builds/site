@@ -24,10 +24,7 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import ivancik from "assets/images/book-armchair.jpeg";
 
-function WorkWithTheRockets
-  (
-    // { nextPage, title, text, buttonText, buttonHref }
-  ) {
+const WorkWithTheRockets = ({ nextPage, title, text, buttonText, buttonHref } ) => {
   return (
     <Card sx={{ height: "100%" }}>
       <SoftBox position="relative" height="100%" p={2}>
