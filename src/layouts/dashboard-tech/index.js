@@ -132,11 +132,11 @@ const DashboardTech = () => {
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets
-               nextPage={nextPage}
-               title={title}
-               text={text}
-               buttonText={buttonText}
-               buttonHref={buttonHref}
+               nextPage="h"
+               title="h"
+               text="h"
+               buttonText="h"
+               buttonHref="h"
               />
             </Grid>
           </Grid>
