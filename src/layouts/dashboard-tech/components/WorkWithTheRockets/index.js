@@ -24,8 +24,10 @@ import SoftTypography from "components/SoftTypography";
 // Images
 import ivancik from "assets/images/book-armchair.jpeg";
 
+import PropTypes from 'prop-types';
+
 const WorkWithTheRockets = (
-  
+  {nextPage}
 ) => {
   return (
     <Card sx={{ height: "100%" }}>
@@ -143,12 +145,12 @@ const WorkWithTheRockets = (
   );
 }
 
-// WorkWithTheRockets.propTypes = {
-//   nextPage: PropTypes.node,
-//   title: PropTypes.node,
-//   text: PropTypes.node,
-//   buttonText: PropTypes.node,
-//   buttonHref: PropTypes.node
-// };
+WorkWithTheRockets.propTypes = {
+  nextPage: PropTypes.string,
+  // title: PropTypes.node,
+  // text: PropTypes.node,
+  // buttonText: PropTypes.node,
+  // buttonHref: PropTypes.node
+};
 
 export default WorkWithTheRockets;
