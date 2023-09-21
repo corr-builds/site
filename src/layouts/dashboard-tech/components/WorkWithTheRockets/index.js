@@ -79,6 +79,7 @@ const WorkWithTheRockets = (
           <SoftTypography
             component="a"
             href={buttonHref}
+            onClick={nextPage}
             variant="button"
             color="white"
             fontWeight="medium"

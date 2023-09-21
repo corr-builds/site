@@ -108,8 +108,8 @@ const DashboardTech = () => {
         setTitle("Projects");
         setText( <>
           <li>Developed an enterprise web application flow to facilitate signing of virtual documents using Java and Springboot</li>
-          <li>Developed a high-throughput application to support trading of various funds using Java and Springboot</li>
-          <li>Developed an event-based enterprise web flow to facilitate account opening using NodeJS and AWS Serverless technologies.</li>
+          <li>Developed a high-throughput application to support trading of international funds using Java and Springboot</li>
+          <li>Developed an event-driven enterprise web flow to facilitate account opening using NodeJS and AWS Serverless technologies.</li>
         </>);
         setButtonText("Books & Courses")
       } else if (page === 3) {
