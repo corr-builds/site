@@ -56,8 +56,47 @@ const DashboardTech = () => {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
   const [page, setPage] = useState(1);
-  const [title, setTitle] = useState("title 1");
-  const [text, setText] = useState("text 1");
+  const [title, setTitle] = useState("Technologies");
+  const [text, setText] = useState(
+    <>
+     <li>AWS Lambda</li>
+              <li>AWS API Gateway</li>
+              <li>AWS DynamoDB</li>
+              <li>AWS Cloudwatch</li>
+              <li>AWS Step Functions</li>
+              <li>AWS EKS</li>
+              <li>AWS IAM</li>
+              <li>Terraform</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Hibernate</li>
+              <li>Spring Data JPA</li>
+              <li>REST APIs</li>
+              <li>Postman</li>
+              <li>JWT</li>
+              <li>NodeJS</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git</li>
+              <li>Gitlab CI</li>
+              <li>Jenkins</li>
+              <li>Apache Kafka</li>
+              <li>Drools</li>
+              <li>SQL</li>
+              <li>Oracle</li>
+              <li>Taurus</li>
+              <li>OpenAPI (Swagger)</li>
+              <li>Docker</li>
+              <li>Openshift</li>
+              <li>Log4J</li>
+              <li>Kibana</li>
+              <li>Prometheus</li>
+              <li>Artifactory</li>
+    </>
+  );
   const [buttonText, setButtonText] = useState("Next Poem");
   const [buttonHref, setButtonHref] = useState("#")
   const nextPage = () => {
@@ -132,11 +171,11 @@ const DashboardTech = () => {
             </Grid>
             <Grid item xs={12} lg={5}>
               <WorkWithTheRockets
-               nextPage="h"
-               title="h"
-               text="h"
-               buttonText="h"
-               buttonHref="h"
+               nextPage={nextPage}
+               title={title}
+               text={text}
+               buttonText={buttonText}
+               buttonHref={buttonHref}
               />
             </Grid>
           </Grid>
