@@ -78,7 +78,7 @@ const WorkWithTheRockets = (
           </div>
           <SoftTypography
             component="a"
-            href="/about"
+            href={buttonHref}
             variant="button"
             color="white"
             fontWeight="medium"
@@ -100,7 +100,7 @@ const WorkWithTheRockets = (
               },
             }}
           >
-            Inquire 
+            {buttonText} 
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </SoftTypography>
         </SoftBox>

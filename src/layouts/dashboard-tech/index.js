@@ -97,7 +97,7 @@ const DashboardTech = () => {
               <li>Artifactory</li>
     </>
   );
-  const [buttonText, setButtonText] = useState("Next Poem");
+  const [buttonText, setButtonText] = useState("Projects");
   const [buttonHref, setButtonHref] = useState("#")
   const nextPage = () => {
     setPage(page + 1);
