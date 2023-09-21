@@ -105,8 +105,13 @@ const DashboardTech = () => {
   useEffect(
     function onChange() {
       if (page === 2) {
-        setTitle("title 2");
-        setText("text 2");
+        setTitle("Projects");
+        setText( <>
+          <li>Developed an enterprise web application flow to facilitate signing of virtual documents using Java and Springboot</li>
+          <li>Developed a high-throughput application to support trading of various funds using Java and Springboot</li>
+          <li>Developed an event-based enterprise web flow to facilitate account opening using NodeJS and AWS Serverless technologies.</li>
+        </>);
+        setButtonText("Books & Courses")
       } else if (page === 3) {
         setTitle("title 3");
         setText("text 3");
