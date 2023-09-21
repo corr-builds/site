@@ -60,7 +60,7 @@ const WorkWithTheRockets = (
               {title}
             </SoftTypography>
             <SoftTypography variant="body2" color="white">
-             
+             {text}
             </SoftTypography>
             <SoftTypography variant="h6" color="white" fontWeight="bold">
               Projects
