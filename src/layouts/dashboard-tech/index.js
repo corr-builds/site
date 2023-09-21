@@ -113,12 +113,9 @@ const DashboardTech = () => {
         </>);
         setButtonText("Books & Courses")
       } else if (page === 3) {
-        setTitle("title 3");
-        setText("text 3");
-      } else if (page === 4) {
-        setTitle("title 4");
-        setText("maybe this is eventually an add for the poetry collection?");
-        setButtonText("Subscribe");
+        setTitle("Books & Courses");
+        setText("todo list books and courses");
+        setButtonText("Inquire");
         setButtonHref("/about")
       }
     },

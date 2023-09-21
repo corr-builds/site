@@ -50,8 +50,7 @@ const WorkWithTheRockets = (
         >
           <SoftBox mb={3} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
-              Feats todo make vertically scrollable - or - collapsible? no, that would make the git
-              icon look weired. vertically scrollable 
+              Feats
             </SoftTypography>
           </SoftBox>
           <div style={{ height: "25vh", overflowY: "auto"}}>
@@ -61,18 +60,6 @@ const WorkWithTheRockets = (
             </SoftTypography>
             <SoftTypography variant="body2" color="white">
              {text}
-            </SoftTypography>
-            <SoftTypography variant="h6" color="white" fontWeight="bold">
-              Projects
-            </SoftTypography>
-            <SoftTypography variant="body2" color="white">
-              <li>AWS</li>
-            </SoftTypography>
-            <SoftTypography variant="h6" color="white" fontWeight="bold">
-              Books & Courses
-            </SoftTypography>
-            <SoftTypography variant="body2" color="white">
-              <li>AWS</li>
             </SoftTypography>
           </SoftBox>
           </div>
