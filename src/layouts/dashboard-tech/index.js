@@ -114,7 +114,16 @@ const DashboardTech = () => {
         setButtonText("Books & Courses")
       } else if (page === 3) {
         setTitle("Books & Courses");
-        setText("todo list books and courses");
+        setText(
+          <>
+            <li>2023 - The DynamoDB Book</li>
+            <li>2023 - Other Professional Development</li>
+            <li>2022 - Effective Javascript</li>
+            <li>2022 - Ultimate AWS Certified Cloud Developer, course by Stephane Maarek</li>
+            <li>2021 - React with Redux, course by Steven Grider</li>
+            <li>2021 - Effective Java</li>
+          </>
+        );
         setButtonText("Inquire");
         setButtonHref("/about")
       }
