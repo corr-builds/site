@@ -42,11 +42,12 @@ import OrderOverview from "layouts/dashboard/components/OrderOverview";
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const DashboardTech = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
+  const ref = useRef();
   function getYearsWorked() { // birthday is a date
     let startDate = new Date();
     startDate.setFullYear(2020);
@@ -104,6 +105,7 @@ const DashboardTech = () => {
   };
   useEffect(
     function onChange() {
+      console.log(ref.current && Object.values(ref.current.children).length)
       if (page === 2) {
         setTitle("Projects");
         setText( <>
@@ -115,14 +117,16 @@ const DashboardTech = () => {
       } else if (page === 3) {
         setTitle("Books & Courses");
         setText(
-          <>
+          <div ref={ref}>
+            
             <li>2023 - The DynamoDB Book</li>
             <li>2023 - Other Professional Development</li>
             <li>2022 - Effective Javascript</li>
             <li>2022 - Ultimate AWS Certified Cloud Developer, course by Stephane Maarek</li>
             <li>2021 - React with Redux, course by Steven Grider</li>
-            <li>2021 - Effective Java</li>
-          </>
+              <li>2021 - Effective Java</li>
+              
+          </div>
         );
         setButtonText("Inquire");
         setButtonHref("/about")
