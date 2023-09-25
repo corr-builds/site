@@ -39,6 +39,11 @@ const gradientLineChartData = {
       data: [0, 0, 0, 0, 0, 0, 0, 0, 8],
     },
     {
+      label: "AWS",
+      color: "warning",
+      data: [0, 0, 0, 0, 0, 0, 0, 5, 8],
+    },
+    {
       label: "Python",
       color: "info",
       data: [2, 1, 0, 0, 0, 0, 0, 2, 2],
@@ -47,6 +52,21 @@ const gradientLineChartData = {
       label: "Java",
       color: "dark",
       data: [0, 0, 0, 0, 0, 5, 8, 8, 5],
+    },
+    {
+      label: "C++",
+      color: "error",
+      data: [0, 5, 3, 0, 0, 0, 0, 0, 0],
+    },
+    {
+      label: "Javascript",
+      color: "light",
+      data: [0, 0, 0, 0, 0, 2, 1, 2, 5],
+    },
+    {
+      label: "React",
+      color: "primary",
+      data: [0, 0, 0, 0, 0, 2, 1, 2, 2],
     },
   ],
 };
