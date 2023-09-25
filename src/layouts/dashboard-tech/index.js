@@ -39,8 +39,8 @@ import Projects from "layouts/dashboard/components/Projects";
 import OrderOverview from "layouts/dashboard/components/OrderOverview";
 
 // Data
-import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
+import reportsBarChartData from "layouts/dashboard-tech/data/reportsBarChartData";
+import gradientLineChartData from "layouts/dashboard-tech/data/gradientLineChartData";
 
 import { useState, useEffect, useRef } from "react";
 
