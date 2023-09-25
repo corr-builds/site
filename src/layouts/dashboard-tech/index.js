@@ -199,16 +199,16 @@ const DashboardTech = () => {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={12}>
               <GradientLineChart
-                title="Sales Overview"
+                title="Core Technologies Over Time"
                 description={
                   <SoftBox display="flex" alignItems="center">
                     <SoftBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
-                      <Icon className="font-bold">arrow_upward</Icon>
+                      {/* <Icon className="font-bold">arrow_upward</Icon> */}
                     </SoftBox>
                     <SoftTypography variant="button" color="text" fontWeight="medium">
-                      4% more{" "}
+                      {/* 4% more{" "} */}
                       <SoftTypography variant="button" color="text" fontWeight="regular">
-                        in 2021
+                        {/* in 2021 */}
                       </SoftTypography>
                     </SoftTypography>
                   </SoftBox>
