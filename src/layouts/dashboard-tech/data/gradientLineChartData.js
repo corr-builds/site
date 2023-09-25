@@ -34,6 +34,11 @@ const gradientLineChartData = {
       data: [0, 0, 5, 8, 0, 0, 0, 0, 0],
     },
     {
+      label: "DynamoDB",
+      color: "success",
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 8],
+    },
+    {
       label: "Python",
       color: "info",
       data: [2, 1, 0, 0, 0, 0, 0, 2, 2],

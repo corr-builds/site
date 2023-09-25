@@ -213,7 +213,7 @@ const DashboardTech = () => {
                     </SoftTypography>
                   </SoftBox>
                 }
-                height="30.25rem"
+                height="35.25rem"
                 chart={gradientLineChartData}
                 />
                 
