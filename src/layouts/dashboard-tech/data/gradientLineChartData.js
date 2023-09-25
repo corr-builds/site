@@ -14,17 +14,34 @@ Coded by www.creative-tim.com
 */
 
 const gradientLineChartData = {
-  labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  labels: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"],
+  // possible values: 0, 1, 2, 3, 5, 8
+  /* color options:
+   "primary",
+    "secondary",
+    "info",
+    "success",
+    "warning",
+    "error",
+    "light",
+    "dark",
+  */
+  // list relational database design, dynamodb, aws, java, python, c++, javascript, react
   datasets: [
     {
-      label: "test change",
-      color: "info",
-      data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+      label: "Relational Database Design",
+      color: "secondary",
+      data: [0, 0, 5, 8, 0, 0, 0, 0, 0],
     },
     {
-      label: "Websites",
+      label: "Python",
+      color: "info",
+      data: [2, 1, 0, 0, 0, 0, 0, 2, 2],
+    },
+    {
+      label: "Java",
       color: "dark",
-      data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+      data: [0, 0, 0, 0, 0, 5, 8, 8, 5],
     },
   ],
 };
