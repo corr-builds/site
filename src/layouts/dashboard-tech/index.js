@@ -161,7 +161,7 @@ const DashboardTech = () => {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Books & Courses" }}
-                count="todo"
+                count="6"
                 // percentage={{ color: "error", text: "-2%" }}
                 icon={{ color: "info", component: "emoji_events" }}
               />
@@ -169,7 +169,7 @@ const DashboardTech = () => {
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "Technologies" }}
-                count="todo"
+                count="36"
                 // percentage={{ color: "success", text: "+5%" }}
                 icon={{
                   color: "info",

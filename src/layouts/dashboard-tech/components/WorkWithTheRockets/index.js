@@ -59,7 +59,7 @@ const WorkWithTheRockets = (
               {title}
             </SoftTypography>
             <SoftTypography variant="body2" color="white">
-             {text}
+                {text}
             </SoftTypography>
           </SoftBox>
           </div>
