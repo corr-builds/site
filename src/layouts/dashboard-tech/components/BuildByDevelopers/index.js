@@ -47,7 +47,7 @@ function BuildByDevelopers() {
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                 You can view the README documenting my process here. todo here should link somewhere
+                 You can view the <a href="https://github.com/corr-builds/site#readme">README documenting my process here</a>. 
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
@@ -55,13 +55,13 @@ function BuildByDevelopers() {
               </SoftTypography> 
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                 View solutions of leetcode problems I have solved here(todo make link).
+                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
                 </SoftTypography>
                 </SoftBox>  
                 </div>
               <SoftTypography
                 component="a"
-                href="#"
+                href="https://github.com/corr-builds"
                 variant="button"
                 color="text"
                 fontWeight="medium"
@@ -83,7 +83,7 @@ function BuildByDevelopers() {
                   },
                 }}
               >
-                Github todo make link work
+                Github 
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
