@@ -88,8 +88,8 @@ const routes = [
   {
     type: "collapse",
     name: "Personal",
-    key: "software",
-    route: "/software",
+    key: "personal",
+    route: "/personal",
     icon: <Office size="12px" />,
     component: <DashboardTech />,
     noCollapse: true,
