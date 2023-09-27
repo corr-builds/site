@@ -84,6 +84,15 @@ const routes = [
     icon: <Office size="12px" />,
     component: <DashboardTech />,
     noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Personal",
+    key: "software",
+    route: "/software",
+    icon: <Office size="12px" />,
+    component: <DashboardTech />,
+    noCollapse: true,
   }
 ];
 
