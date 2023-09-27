@@ -173,7 +173,7 @@ const DashboardTech = () => {
                 // percentage={{ color: "success", text: "+5%" }}
                 icon={{
                   color: "info",
-                  component: "shopping_cart",
+                  component: "computer",
                 }}
               />
             </Grid>
