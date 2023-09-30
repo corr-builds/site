@@ -22,7 +22,7 @@ import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
 
 // Images
-import ivancik from "assets/images/book-armchair.jpeg";
+import ivancik from "assets/images/mount.jpg";
 
 function WorkWithTheRockets() {
   return (
