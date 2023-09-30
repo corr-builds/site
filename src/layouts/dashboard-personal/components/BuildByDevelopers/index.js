@@ -41,11 +41,11 @@ function BuildByDevelopers() {
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
                 Works
               </SoftTypography>
-              <div style={{ height: "70vh" }}>
+              <div style={{ height: "80vh" }}>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
                 Song Recommendations
               </SoftTypography>
-              <SoftBox mb={6}>
+              <SoftBox mb={4}>
                 <SoftTypography variant="body2" color="text">
                  <li>Float On by Modest Mouse</li>
     <li>What About Us by P!nk</li>
@@ -53,27 +53,33 @@ function BuildByDevelopers() {
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
-                Movie Reccomendations
+                Movie Recommendations
               </SoftTypography> 
-              <SoftBox mb={6}>
+              <SoftBox mb={4}>
                 <SoftTypography variant="body2" color="text">
-                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                 <li>Arsenic and Old Lace</li>
+  <li>All About Eve</li>
+    <li>Tar</li>
                 </SoftTypography>
                 </SoftBox>  
                 <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
-                Book Reccomendations
+                Book Recommendations
               </SoftTypography> 
-              <SoftBox mb={6}>
+              <SoftBox mb={4}>
                 <SoftTypography variant="body2" color="text">
-                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                 <li>Man’s Search for Meaning by Victor Frankl</li>
+    <li>Atomic Habits by James Clear</li>
+    <li>Subliminal by Leonard Mlodinow</li>
                 </SoftTypography>
                 </SoftBox>  
                 <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
-                Poem Reccomendations
+                Poem Recommendations
               </SoftTypography> 
-              <SoftBox mb={6}>
+              <SoftBox mb={4}>
                 <SoftTypography variant="body2" color="text">
-                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                 <li>Invictus by William Ernest Henley</li>
+    <li>If by Rudyard Kipling</li>
+    <li>Dinosauria We by Charles Bukowski</li>
                 </SoftTypography>
                 </SoftBox>  
                 </div>
