@@ -33,7 +33,7 @@ import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import typography from "assets/theme/base/typography";
 
 // Dashboard layout components
-import BuildByDevelopers from "layouts/dashboard/components/BuildByDevelopers";
+import BuildByDevelopers from "layouts/dashboard-personal/components/BuildByDevelopers";
 import WorkWithTheRockets from "layouts/dashboard/components/WorkWithTheRockets";
 import Projects from "layouts/dashboard/components/Projects";
 import OrderOverview from "layouts/dashboard/components/OrderOverview";
@@ -44,34 +44,14 @@ import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData"
 
 import { useState, useEffect } from "react";
 
-const Dashboard = () => {
+const DashboardPersonal = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
   const [page, setPage] = useState(1);
-  const [title, setTitle] = useState("title 1");
+  const [title, setTitle] = useState("title 2");
   const [text, setText] = useState("text 1");
   const [buttonText, setButtonText] = useState("Next Poem");
   const [buttonHref, setButtonHref] = useState("#")
-  const nextPage = () => {
-    setPage(page + 1);
-  };
-  useEffect(
-    function onChange() {
-      if (page === 2) {
-        setTitle("title 2");
-        setText("text 2");
-      } else if (page === 3) {
-        setTitle("title 3");
-        setText("text 3");
-      } else if (page === 4) {
-        setTitle("title 4");
-        setText("maybe this is eventually an add for the poetry collection?");
-        setButtonText("Subscribe");
-        setButtonHref("/about")
-      }
-    },
-    [page]
-  );
 
   return (
     <DashboardLayout>
@@ -81,7 +61,6 @@ const Dashboard = () => {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={7}>
               <BuildByDevelopers
-                nextPage={nextPage}
                 title={title}
                 text={text}
                 buttonText={buttonText}
@@ -99,4 +78,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashboardPersonal;

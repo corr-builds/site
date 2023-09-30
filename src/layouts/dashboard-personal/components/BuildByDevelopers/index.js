@@ -24,12 +24,9 @@ import SoftTypography from "components/SoftTypography";
 
 // Images
 import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/pen-shadow-spaced.png";
-import { PropaneSharp } from "@mui/icons-material";
+import rocketWhite from "assets/images/illustrations/git-icon.png";
 
-import PropTypes from 'prop-types';
-
-const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) => {
+function BuildByDevelopers() {
   return (
     <Card>
       <SoftBox p={2}>
@@ -38,32 +35,33 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Click For Next Poem
+                  Repos
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
                 Works
               </SoftTypography>
+              <div style={{ height: "38vh" }}>
+              <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                How I Created This Website
+              </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  todo put 3 poems here and end with email collection
-                  <br />
-                  <i>Selected Poetry</i><br />
-                  <br />
-                  <b>{title}</b><br /><br />
-
-                  <div style={{ height: "25vh" }}>
-                    {text}
-                    </div>
-
-
+                 You can view the <a href="https://github.com/corr-builds/site#readme">README documenting my process here</a>. 
                 </SoftTypography>
               </SoftBox>
+              <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                Leetcode Solutions
+              </SoftTypography> 
+              <SoftBox mb={6}>
+                <SoftTypography variant="body2" color="text">
+                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                </SoftTypography>
+                </SoftBox>  
+                </div>
               <SoftTypography
-                //onClick={() => console.log('hi')}
-                onClick={nextPage}
                 component="a"
-                href={buttonHref}
+                href="https://github.com/corr-builds"
                 variant="button"
                 color="text"
                 fontWeight="medium"
@@ -85,7 +83,7 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
                   },
                 }}
               >
-                {buttonText}
+                Github 
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
@@ -119,13 +117,4 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
   );
 }
 
-BuildByDevelopers.propTypes = {
-  nextPage: PropTypes.node,
-  title: PropTypes.node,
-  text: PropTypes.node,
-  buttonText: PropTypes.node,
-  buttonHref: PropTypes.node
-};
-
 export default BuildByDevelopers;
-
