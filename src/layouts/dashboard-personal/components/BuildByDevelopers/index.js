@@ -35,15 +35,15 @@ function BuildByDevelopers() {
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Repos
+                  Personal Contributions
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
                 Works
               </SoftTypography>
-              <div style={{ height: "38vh" }}>
+              <div style={{ height: "70vh" }}>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
-                How I Created This Website
+                Song Recommendations
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
@@ -51,7 +51,23 @@ function BuildByDevelopers() {
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
-                Leetcode Solutions
+                Movie Reccomendations
+              </SoftTypography> 
+              <SoftBox mb={6}>
+                <SoftTypography variant="body2" color="text">
+                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                </SoftTypography>
+                </SoftBox>  
+                <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                Book Reccomendations
+              </SoftTypography> 
+              <SoftBox mb={6}>
+                <SoftTypography variant="body2" color="text">
+                 View solutions of <a href="https://github.com/corr-builds/leetcode">Leetcode problems I have solved here</a>.
+                </SoftTypography>
+                </SoftBox>  
+                <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
+                Poem Reccomendations
               </SoftTypography> 
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
@@ -61,7 +77,7 @@ function BuildByDevelopers() {
                 </div>
               <SoftTypography
                 component="a"
-                href="https://github.com/corr-builds"
+                href="/about"
                 variant="button"
                 color="text"
                 fontWeight="medium"
@@ -83,7 +99,7 @@ function BuildByDevelopers() {
                   },
                 }}
               >
-                Github 
+                Subscribe 
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
               </SoftTypography>
             </SoftBox>
