@@ -47,7 +47,9 @@ function BuildByDevelopers() {
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                 You can view the <a href="https://github.com/corr-builds/site#readme">README documenting my process here</a>. 
+                 <li>Float On by Modest Mouse</li>
+    <li>What About Us by P!nk</li>
+    <li>Mi Lugar en Ti by Carol Rovira</li>
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h6" fontWeight="bold" gutterBottom>
