@@ -40,6 +40,7 @@ import Basic from "layouts/basic";
 import Tables from "layouts/tables";
 import Dashboard from "layouts/dashboard";
 import DashboardTech from "layouts/dashboard-tech";
+import DashboardPersonal from "layouts/dashboard-personal";
 import Billing from "layouts/billing";
 import VirtualReality from "layouts/virtual-reality";
 import RTL from "layouts/rtl";
@@ -91,7 +92,7 @@ const routes = [
     key: "personal",
     route: "/personal",
     icon: <Office size="12px" />,
-    component: <DashboardTech />,
+    component: <DashboardPersonal />,
     noCollapse: true,
   }
 ];
