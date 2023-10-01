@@ -73,7 +73,7 @@ const routes = [
     name: "Writing",
     key: "writing",
     route: "/writing",
-    icon: <Office size="12px" />,
+    icon: <Document size="12px" />,
     component: <Dashboard />,
     noCollapse: true,
   },
@@ -91,7 +91,7 @@ const routes = [
     name: "Personal",
     key: "personal",
     route: "/personal",
-    icon: <Office size="12px" />,
+    icon: <Cube size="12px" />,
     component: <DashboardPersonal />,
     noCollapse: true,
   }
