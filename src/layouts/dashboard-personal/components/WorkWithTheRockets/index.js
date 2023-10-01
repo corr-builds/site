@@ -51,9 +51,9 @@ function WorkWithTheRockets() {
           </SoftBox>
           <SoftBox mb={2}>
             <SoftTypography variant="body2" color="white">
-              <li>2023 - Helped Edit & Rewrite Winning Essay (Scholarship)</li>
-              <li>2015 - Published Essay</li>
-              <li>2015 - First Place Essay Contest Winner</li>
+              <li>Learned to cope with both praise and ignominy</li>  
+<li>Survived suicide attempt and built meaningful life</li>
+<li>Adapted and gained conversational fluency when immersed into new language and culture (Spanish)</li>
             </SoftTypography>
           </SoftBox>
           <SoftTypography
