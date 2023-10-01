@@ -50,7 +50,7 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-      <p>Hi there! My name is Cathleen Corr. I write, create, and work as a software engineer. Here are some free notes on how I organize my life which you might like to take inspiration from.
+      <p>Hi there! My name is Cathleen Corr. I write, create, and work as a software engineer. I once survived near death (by my own hand) but I’ve come back with the mission to be the best person I can be. This site includes free notes on how I organize my life which you might like to take inspiration from.
       </p>
       <br />
       <p>Share your email now if you’d like to get notified when I create new content: </p>
