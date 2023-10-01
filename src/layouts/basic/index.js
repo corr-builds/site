@@ -42,6 +42,8 @@ import OrderOverview from "layouts/basic/components/OrderOverview";
 import reportsBarChartData from "layouts/basic/data/reportsBarChartData";
 import gradientLineChartData from "layouts/basic/data/gradientLineChartData";
 
+import semicolon from "assets/images/logos/favicon.png";
+
 function Dashboard() {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
@@ -57,6 +59,14 @@ function Dashboard() {
       <p>TODO COLLECT EMAIL HERE</p>
         <br />
         <p>Email TODO for business inquiries.</p>
+        <div style={{display: "flex", alignItems: "left"}}>
+        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" }}>
+         <img src={semicolon} style={{width: "30%"}} />
+        </div>
+        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" }}>
+        <img src={semicolon} style={{width: "30%"}} />
+        </div>
+        </div>
       </SoftBox>
       <Footer />
     </DashboardLayout>
