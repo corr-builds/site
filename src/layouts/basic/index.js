@@ -52,19 +52,19 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <SoftBox py={3}>
-      <p>Hi there! My name is Cathleen Corr. I write, create, and work as a software engineer. I once survived near death (by my own hand) but I’ve come back with the mission to be the best person I can be. This site includes free notes on how I organize my life which you might like to take inspiration from.
+     
+        <div style={{display: "flex", alignItems: "left"}}>
+        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" }}>
+        <p>Hi there! My name is Cathleen Corr. I write, create, and work as a software engineer. I once survived near death (by my own hand) but I’ve come back with the mission to be the best person I can be. This site includes free notes on how I organize my life which you might like to take inspiration from.
       </p>
       <br />
       <p>Share your email now if you’d like to get notified when I create new content: </p>
       <p>TODO COLLECT EMAIL HERE</p>
         <br />
         <p>Email TODO for business inquiries.</p>
-        <div style={{display: "flex", alignItems: "left"}}>
-        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" }}>
-         <img src={semicolon} style={{width: "30%"}} />
         </div>
-        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" }}>
-        <img src={semicolon} style={{width: "30%"}} />
+        <div style={{ display: "inline-block", verticalAlign: "text-top", margin: "0 auto" , backgroundColor: "#000000"}}>
+        <img src={semicolon} style={{width: "100%"}} />
         </div>
         </div>
       </SoftBox>
