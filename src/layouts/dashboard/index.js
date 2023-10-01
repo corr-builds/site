@@ -48,8 +48,13 @@ const Dashboard = () => {
   const { size } = typography;
   const { chart, items } = reportsBarChartData;
   const [page, setPage] = useState(1);
-  const [title, setTitle] = useState("title 1");
-  const [text, setText] = useState("text 1");
+  const [title, setTitle] = useState("You Bore (I’m Okay with It) ");
+  const [text, setText] = useState(<div>
+
+
+i should be a small poem to reduce friction - can i sort a folder in drive by file size?
+
+  </div>);
   const [buttonText, setButtonText] = useState("Next Poem");
   const [buttonHref, setButtonHref] = useState("#")
   const nextPage = () => {

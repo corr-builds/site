@@ -51,8 +51,7 @@ const BuildByDevelopers = ({ nextPage, title, text, buttonText, buttonHref } ) =
                   <i>Selected Poetry</i><br />
                   <br />
                   <b>{title}</b><br /><br />
-
-                  <div style={{ height: "25vh" }}>
+                  <div style={{ height: "25vh"}}>
                     {text}
                     </div>
 
